@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -39,21 +39,41 @@ body {
 .hero {
   background-color: #FFFFFF;
   border-radius: 24px 24px 100px 24px;
-  max-width: 343px;
-  padding: 48px 24px;
+  max-width: 21.4375rem;
+  padding: 3rem 1.5rem;
+}
+@media (min-width: 75rem) {
+  .hero {
+    max-width: 52.5rem;
+    width: 52.5rem;
+    padding: 3.5rem;
+    border-radius: 24px 24px 200px 24px;
+  }
+}
+
+.hero__form {
+  border-bottom: 1px solid #DCDCDC;
+  position: relative;
+  padding-bottom: 3.9688rem;
+  margin-bottom: 3.9688rem;
 }
 
 .form__group {
   border: 0;
   max-width: 100%;
   display: flex;
-  gap: 16px;
+  gap: 1rem;
+}
+@media (min-width: 75rem) {
+  .form__group {
+    gap: 2rem;
+  }
 }
 
 .form__input-box {
   display: flex;
   flex-direction: column;
-  max-width: 87px;
+  max-width: 5.4375rem;
 }
 .form__input-box label {
   text-transform: uppercase;
@@ -61,12 +81,80 @@ body {
   color: #716F6F;
   font-size: 0.75rem;
   letter-spacing: 3px;
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
+}
+@media (min-width: 75rem) {
+  .form__input-box label {
+    font-size: 0.875rem;
+  }
 }
 .form__input-box input {
-  padding: 12px 0 12px 16px;
+  padding: 0.75rem 0 0.75rem 1rem;
   border-radius: 8px;
   border: 1px solid #DCDCDC;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
+  cursor: pointer;
+}
+.form__input-box input:focus {
+  outline-color: #854DFF;
+}
+@media (min-width: 75rem) {
+  .form__input-box input {
+    font-size: 2rem;
+    padding: 0.75rem 0 0.75rem 1.5rem;
+  }
+}
+@media (min-width: 75rem) {
+  .form__input-box {
+    max-width: 10rem;
+  }
+}
+
+.form__btn {
+  position: absolute;
+  background-color: #854DFF;
+  border-radius: 50%;
+  padding: 1.25rem;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.form__btn:hover {
+  background-color: #151515;
+  cursor: pointer;
+}
+.form__btn .btn__img {
+  max-width: 1.5rem;
+  aspect-ratio: 1;
+}
+@media (min-width: 75rem) {
+  .form__btn .btn__img {
+    max-width: 2.75rem;
+  }
+}
+@media (min-width: 75rem) {
+  .form__btn {
+    right: 0;
+    left: initial;
+    transform: initial;
+    padding: 1.625rem;
+    bottom: -3rem;
+  }
+}
+
+.hero__result {
+  font-size: 3.5rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1.1;
+}
+@media (min-width: 75rem) {
+  .hero__result {
+    font-size: 6.5rem;
+  }
+}
+
+.result__number {
+  color: #854DFF;
 }/*# sourceMappingURL=styles.css.map */
