@@ -9,27 +9,30 @@
 </head>
 <body>
   <main class="hero">
-    <form action="" class="hero__form">
+    <form action="" class="hero__form" novalidate>
       <fieldset class="form__group">
         <div class="form__input-box">
           <label for="day-input">Day</label>
-          <input id="day-input" type="text" placeholder="DD"></input>
+          <input id="day-input" type="text" placeholder="DD" maxlength="2" required></input>
+          <span class="form__error day_error"></span>
         </div>
         <div class="form__input-box">
           <label for="month-input">Month</label>
-          <input id="month-input" type="text" placeholder="MM"></input>
+          <input id="month-input" type="text" placeholder="MM" maxlength="2" required></input>
+          <span class="form__error month__error"></span>
         </div>
         <div class="form__input-box">
           <label for="year-input">Year</label>
-          <input id="year-input" type="text" placeholder="YYYY"></input>
+          <input id="year-input" type="text" placeholder="YYYY" minlength="4" maxlength="4" required></input>
+          <span class="form__error years__error"></span>
         </div>
       </fieldset>
-      <button class="form__btn"><img class="btn__img" src="./assets/images/icon-arrow.svg" alt=""></button>
+      <button type="submit" class="form__btn"><img class="btn__img" src="./assets/images/icon-arrow.svg" alt=""></button>
     </form>
     <section class="hero__result">
-      <p class="result__text"><span class="result__number">--</span>years</p>
-      <p class="result__text"><span class="result__number">--</span>months</p>
-      <p class="result__text"><span class="result__number">--</span>days</p>
+      <p class="result__text result__years"><span class="result__number">--</span>years</p>
+      <p class="result__text result__month"><span class="result__number">--</span>months</p>
+      <p class="result__text result__day"><span class="result__number">--</span>days</p>
     </section>
   </main>
 

@@ -96,7 +96,6 @@ body {
     cursor: pointer;
     &:focus {
       outline-color: $primary-1;
-      
     }
     @include device(desktop) {
       font-size: map-get($fonts, "$medium2");
@@ -148,5 +147,13 @@ line-height: 1.1;
 
 .result__number {
 color: $primary-1;
+}
+
+.form__error {
+  color: #FF5959;
+  font-size: map-get($fonts, "$small2" );
+  font-style: italic;
+  margin-top: 8px;
+  display: none;
 }
 

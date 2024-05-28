@@ -157,4 +157,12 @@ body {
 
 .result__number {
   color: #854DFF;
+}
+
+.form__error {
+  color: #FF5959;
+  font-size: 0.875rem;
+  font-style: italic;
+  margin-top: 8px;
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
