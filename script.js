@@ -90,7 +90,7 @@ function calculateAndShowAge() {
   resultDays.textContent = ageDays;
 }
 
-// Select the <form> element
+
 form.addEventListener('submit', checkInputs)
 
 
